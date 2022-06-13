@@ -1,5 +1,4 @@
 require './human'
-require './thinkable'
 
 #田中　太郎（変数名：tanaka）という名前を持つHumanクラスのインスタンスを生成してinitializeで名前を初期化。
 tanaka = Human.new('田中　太郎', 25, '電車')

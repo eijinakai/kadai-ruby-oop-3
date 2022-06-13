@@ -1,4 +1,3 @@
-require './animal'
 require './thinkable'
 
 #Humanクラスの定義

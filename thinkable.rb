@@ -1,5 +1,4 @@
 require './animal'
-require './human'
 
 module Thinkable
   def think
