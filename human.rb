@@ -3,7 +3,9 @@ require './thinkable'
 
 #Humanクラスの定義
 class Human < Animal
-  
+#Thinkable モジュールの think メソッドをこのクラスで使えるようにするためにThinkable モジュールを includeした。 
+    include Thinkable
+    
 #Mentor クラスにインスタンス変数name, nenrei, syumiを持たせた。
  attr_accessor :name, :nenrei, :syumi
 
@@ -18,14 +20,4 @@ class Human < Animal
     def say
      puts "#{self.name}です。私は#{self.nenrei}歳です。"
     end
-
-#Humanクラスにthinkメソッドを持たせ、「 私は○○について考えてます」 と表示できるようにした。
-    def think
-    puts "私は#{self.syumi}について考えています。"
-    end
-end
-
-#Thinkable モジュールの think メソッドをこのクラスで使えるようにするためにThinkable モジュールを includeした。 
-class Human
-  include Thinkable
 end

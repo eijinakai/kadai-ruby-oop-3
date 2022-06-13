@@ -1,4 +1,3 @@
-require './animal'
 require './human'
 require './thinkable'
 
